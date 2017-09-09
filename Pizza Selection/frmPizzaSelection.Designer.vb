@@ -23,16 +23,16 @@ Partial Class frmPizzaSelection
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lblHeading = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.picDeepDish = New System.Windows.Forms.PictureBox()
+        Me.picThinCrust = New System.Windows.Forms.PictureBox()
         Me.btnDeepDish = New System.Windows.Forms.Button()
         Me.btnThinCrush = New System.Windows.Forms.Button()
         Me.btnSelectPizza = New System.Windows.Forms.Button()
-        Me.lblIntrutions = New System.Windows.Forms.Label()
+        Me.lblInstruction = New System.Windows.Forms.Label()
         Me.lblConfirmation = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picDeepDish, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.picThinCrust, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'lblHeading
@@ -45,21 +45,21 @@ Partial Class frmPizzaSelection
         Me.lblHeading.TabIndex = 0
         Me.lblHeading.Text = "Pizza Selection"
         '
-        'PictureBox1
+        'picDeepDish
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 46)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(185, 150)
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.picDeepDish.Location = New System.Drawing.Point(12, 46)
+        Me.picDeepDish.Name = "picDeepDish"
+        Me.picDeepDish.Size = New System.Drawing.Size(185, 150)
+        Me.picDeepDish.TabIndex = 1
+        Me.picDeepDish.TabStop = False
         '
-        'PictureBox2
+        'picThinCrust
         '
-        Me.PictureBox2.Location = New System.Drawing.Point(215, 46)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(185, 150)
-        Me.PictureBox2.TabIndex = 2
-        Me.PictureBox2.TabStop = False
+        Me.picThinCrust.Location = New System.Drawing.Point(215, 46)
+        Me.picThinCrust.Name = "picThinCrust"
+        Me.picThinCrust.Size = New System.Drawing.Size(185, 150)
+        Me.picThinCrust.TabIndex = 2
+        Me.picThinCrust.TabStop = False
         '
         'btnDeepDish
         '
@@ -88,14 +88,14 @@ Partial Class frmPizzaSelection
         Me.btnSelectPizza.Text = "Select Pizza"
         Me.btnSelectPizza.UseVisualStyleBackColor = True
         '
-        'lblIntrutions
+        'lblInstruction
         '
-        Me.lblIntrutions.AutoSize = True
-        Me.lblIntrutions.Location = New System.Drawing.Point(34, 252)
-        Me.lblIntrutions.Name = "lblIntrutions"
-        Me.lblIntrutions.Size = New System.Drawing.Size(345, 17)
-        Me.lblIntrutions.TabIndex = 6
-        Me.lblIntrutions.Text = "Choose a pizza and then click the Select Pizza button"
+        Me.lblInstruction.AutoSize = True
+        Me.lblInstruction.Location = New System.Drawing.Point(34, 252)
+        Me.lblInstruction.Name = "lblInstruction"
+        Me.lblInstruction.Size = New System.Drawing.Size(345, 17)
+        Me.lblInstruction.TabIndex = 6
+        Me.lblInstruction.Text = "Choose a pizza and then click the Select Pizza button"
         '
         'lblConfirmation
         '
@@ -123,29 +123,29 @@ Partial Class frmPizzaSelection
         Me.ClientSize = New System.Drawing.Size(412, 348)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblConfirmation)
-        Me.Controls.Add(Me.lblIntrutions)
+        Me.Controls.Add(Me.lblInstruction)
         Me.Controls.Add(Me.btnSelectPizza)
         Me.Controls.Add(Me.btnThinCrush)
         Me.Controls.Add(Me.btnDeepDish)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.picThinCrust)
+        Me.Controls.Add(Me.picDeepDish)
         Me.Controls.Add(Me.lblHeading)
         Me.Name = "frmPizzaSelection"
         Me.Text = "Pizza Selection"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picDeepDish, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picThinCrust, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents lblHeading As Label
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents picDeepDish As PictureBox
+    Friend WithEvents picThinCrust As PictureBox
     Friend WithEvents btnDeepDish As Button
     Friend WithEvents btnThinCrush As Button
     Friend WithEvents btnSelectPizza As Button
-    Friend WithEvents lblIntrutions As Label
+    Friend WithEvents lblInstruction As Label
     Friend WithEvents lblConfirmation As Label
     Friend WithEvents btnExit As Button
 End Class
