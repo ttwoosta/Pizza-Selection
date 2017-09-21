@@ -47,11 +47,14 @@ Partial Class frmPizzaSelection
         '
         'picDeepDish
         '
+        Me.picDeepDish.Image = Global.Pizza_Selection.My.Resources.Resources.DeepDish
         Me.picDeepDish.Location = New System.Drawing.Point(12, 46)
         Me.picDeepDish.Name = "picDeepDish"
         Me.picDeepDish.Size = New System.Drawing.Size(185, 150)
+        Me.picDeepDish.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picDeepDish.TabIndex = 1
         Me.picDeepDish.TabStop = False
+        Me.picDeepDish.Visible = False
         '
         'picThinCrust
         '
@@ -81,6 +84,7 @@ Partial Class frmPizzaSelection
         '
         'btnSelectPizza
         '
+        Me.btnSelectPizza.Enabled = False
         Me.btnSelectPizza.Location = New System.Drawing.Point(157, 214)
         Me.btnSelectPizza.Name = "btnSelectPizza"
         Me.btnSelectPizza.Size = New System.Drawing.Size(104, 23)
@@ -109,9 +113,9 @@ Partial Class frmPizzaSelection
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(169, 313)
+        Me.btnExit.Location = New System.Drawing.Point(153, 313)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(107, 23)
         Me.btnExit.TabIndex = 8
         Me.btnExit.Text = "Exit Window"
         Me.btnExit.UseVisualStyleBackColor = True
@@ -120,6 +124,7 @@ Partial Class frmPizzaSelection
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(412, 348)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblConfirmation)
