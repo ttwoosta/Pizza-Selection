@@ -113,6 +113,7 @@ Partial Class frmPizzaSelection
         Me.lblConfirmation.Size = New System.Drawing.Size(175, 18)
         Me.lblConfirmation.TabIndex = 7
         Me.lblConfirmation.Text = "Enjoy your pizza selection"
+        Me.lblConfirmation.Visible = False
         '
         'btnExit
         '
