@@ -58,11 +58,14 @@ Partial Class frmPizzaSelection
         '
         'picThinCrust
         '
+        Me.picThinCrust.Image = Global.Pizza_Selection.My.Resources.Resources.ThinCrust
         Me.picThinCrust.Location = New System.Drawing.Point(215, 46)
         Me.picThinCrust.Name = "picThinCrust"
         Me.picThinCrust.Size = New System.Drawing.Size(185, 150)
+        Me.picThinCrust.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picThinCrust.TabIndex = 2
         Me.picThinCrust.TabStop = False
+        Me.picThinCrust.Visible = False
         '
         'btnDeepDish
         '
@@ -113,6 +116,7 @@ Partial Class frmPizzaSelection
         '
         'btnExit
         '
+        Me.btnExit.Enabled = False
         Me.btnExit.Location = New System.Drawing.Point(153, 313)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(107, 23)
